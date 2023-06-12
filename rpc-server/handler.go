@@ -11,8 +11,7 @@ import (
 type IMServiceImpl struct{}
 
 
-// I believe that this file is where I need to add the needed functionalities for the 
-// backend to work, but honestly I really do no know where to start.
+
 func (s *IMServiceImpl) Send(ctx context.Context, req *rpc.SendRequest) (*rpc.SendResponse, error) {
 	resp := rpc.NewSendResponse()
 	resp.Code, resp.Msg = areYouLucky()
